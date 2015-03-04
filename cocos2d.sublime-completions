@@ -1,0 +1,101 @@
+{
+	"scope": "source.js",
+
+	"completions": [
+
+		// Layer
+		{
+			"trigger": "scheduleOnce\t cc Layer",
+			"contents": "scheduleOnce(${1:callback}, ${2:delay})"
+		},
+
+
+		{
+			"trigger": "addChild\tcc Layer",
+			"contents": "addChild($1)"
+		}, {
+			"trigger": "cc.p\tcc pointer",
+			"contents": "cc.p(${1:x},${2:y})"
+		}, {
+			"trigger": "cc.winSize\tcc the windows size",
+			"contents": "cc.winSize()"
+		},
+
+		// Sprite
+		{
+			"trigger": "Sprite\tcreate Sprite",
+			"contents": "new cc.Sprite(${1:resName})"
+		}, {
+			"trigger": "setAnchorPoint\tcc Sprite",
+			"contents": "setAnchorPoint(cc.p(${1:0.5},${2:0.5}))"
+		}, {
+			"trigger": "setPosition\tcc Sprite",
+			"contents": "setPosition(cc.p(${1:x},${2:y}))"
+		}, {
+			"trigger": "runAction\tcc Sprite",
+			"contents": "runAction($1)"
+		},
+
+
+		// Actions
+		{
+			"trigger": "moveTo\tcc Action",
+			"contents": "new cc.MoveTo(${1:duration_sec},cc.p(${2:x},${3:y}))"
+		}, {
+			"trigger": "moveBy\tcc Action",
+			"contents": "new cc.MoveBy(${1:duration_sec},cc.p(${2:x},${3:y}))"
+		}, {
+			"trigger": "jumpTo\tcc Action",
+			"contents": "new cc.JumpTo(${1:duration_sec}, cc.p(${2:x},${3:y}), ${4:height}, ${5:jumps});"
+		}, {
+			"trigger": "jumpBy\tcc Action",
+			"contents": "new cc.JumpBy(${1:duration_sec}, cc.p(${2:x},${3:y}), ${4:height}, ${5:jumps});"
+		}, {
+			"trigger": "bezierTo\tcc Action",
+			"contents": "var ${2:path} = [$3];\nvar bezierTo = new cc.BezierTo(${1:duration_sec}, ${2:path});"
+		}, {
+			"trigger": "bezierBy\tcc Action",
+			"contents": "var ${2:path} = [$3];\nvar bezierTo = new cc.BezierBy(${1:duration_sec}, ${2:path});"
+		}, {
+			"trigger": "placeTo\tcc Action",
+			"contents": "new cc.Place(cc.p(${1:x},${2:y}))"
+		}, {
+			"trigger": "repeatN\tcc Action",
+			"contents": "new cc.Repeat(${1:action}, ${2:times})"
+		}, {
+			"trigger": "repeatForever\tcc Action",
+			"contents": "new cc.RepeatForever(${1:action})"
+		}, {
+			"trigger": "scaleTo\tcc Action",
+			"contents": "new cc.ScaleTo(${1:duration_sec}, ${2:sx},${3:sy});"
+		}, {
+			"trigger": "scaleBy\tcc Action",
+			"contents": "new cc.ScaleBy(${1:duration_sec}, ${2:sx},${3:sy});"
+		}, {
+			"trigger": "sequence\tcc Action",
+			"contents": "new cc.Sequence([${1:acts}])"
+		}, {
+			"trigger": "easing\t cc Action easing",
+			"contents": "easing(${1:easing})"
+		}
+
+		// audio
+		{
+			"trigger": "getMusicVolume\t cc Audio",
+			"contents": "cc.audioEngine.getMusicVolume()"
+		}, {
+			"trigger": "playEffect\t cc Audio",
+			"contents": "cc.audioEngine.playEffect({1:resName},${2:loop})"
+		}, {
+			"trigger": "setEffectVolume\t cc Audio",
+			"contents": "cc.audioEngine.setEffectsVolume(${1:0.0-1.0})"
+		}, {
+			"trigger": "getEffectVolume\t cc Audio",
+			"contents": " cc.audioEngine.getEffectsVolume()"
+		}, {
+			"trigger": "stopMusic\t cc Audio",
+			"contents": "cc.audioEngine.stopMusic()"
+		},
+	]
+
+}

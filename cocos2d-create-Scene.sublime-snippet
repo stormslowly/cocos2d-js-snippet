@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+cc.Scene.extend({
+  onEnter: function() {
+    this._super();
+    this.addChild(${1:layer});
+  }
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>scene</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
