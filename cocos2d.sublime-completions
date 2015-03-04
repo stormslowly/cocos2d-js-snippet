@@ -77,7 +77,7 @@
 		}, {
 			"trigger": "easing\t cc Action easing",
 			"contents": "easing(${1:easing})"
-		}
+		},
 
 		// audio
 		{
