@@ -18,7 +18,7 @@
 			"contents": "cc.p(${1:x},${2:y})"
 		}, {
 			"trigger": "cc.winSize\tcc the windows size",
-			"contents": "cc.winSize()"
+			"contents": "cc.winSize"
 		},
 
 		// Sprite
@@ -35,8 +35,6 @@
 			"trigger": "runAction\tcc Sprite",
 			"contents": "runAction($1)"
 		},
-
-
 		// Actions
 		{
 			"trigger": "moveTo\tcc Action",
@@ -96,6 +94,22 @@
 			"trigger": "stopMusic\t cc Audio",
 			"contents": "cc.audioEngine.stopMusic()"
 		},
+
+		// Menu
+		{
+			"trigger": "cc.Menu\t cc Menu",
+			"contents": "new cc.Menu(${1:menuItem},${2:menuItem})"
+		}, {
+			"trigger": "menuItemSprite\t cc MenuItem",
+			"contents": "cc.MenuItemSprite(${1:normal},${2:select},${3:callback},this);"
+		},
+
+		//director
+		{
+			"trigger": "runScene\t cc direcotr runScene",
+			"contents": "cc.director.runScene(${1:scene});"
+		}
+
 	]
 
 }
