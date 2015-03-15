@@ -16,10 +16,20 @@
 		}, {
 			"trigger": "cc.p\tcc pointer",
 			"contents": "cc.p(${1:x},${2:y})"
-		}, {
-			"trigger": "cc.winSize\tcc the windows size",
-			"contents": "cc.winSize"
 		},
+
+		{
+			"trigger": "cc.LabelTTF\t cc.LabelTTF",
+			"contents": "cc.LabelTTF(\"${1:string}\", \"Helvetica\", 20)"
+		},
+
+		// Sprite Cache
+
+		{
+			"trigger": "loadplist\t cc addSpriteFrames",
+			"contents": "cc.spriteFrameCache.addSpriteFrames(${1:plist});"
+		},
+
 
 		// Sprite
 		{
@@ -34,6 +44,9 @@
 		}, {
 			"trigger": "runAction\tcc Sprite",
 			"contents": "runAction($1)"
+		}, {
+			"trigger": "setColor\t setColor",
+			"contents": "setColor(cc.color(${1:0,0,0}))"
 		},
 		// Actions
 		{
@@ -77,6 +90,12 @@
 			"contents": "easing(${1:easing})"
 		},
 
+		//Animation
+		{
+			"trigger": "Animation\t cc new Animation",
+			"contents": "new cc.Animation(${1:frames}, ${2:interval})"
+		},
+
 		// audio
 		{
 			"trigger": "getMusicVolume\t cc Audio",
@@ -108,6 +127,14 @@
 		{
 			"trigger": "runScene\t cc direcotr runScene",
 			"contents": "cc.director.runScene(${1:scene});"
+		}, {
+			"trigger": "cc.winSize\t cc WinSize",
+			"contents": "cc.director.getWinSize()"
+		},
+
+		{
+			"trigger": "generateFrameNames\t generateFrameNames",
+			"contents": "generateFrameNames('${1:prefix}',${2:start},${3:stop},'${4:suffix}',${5:zeropad});"
 		}
 
 	]
