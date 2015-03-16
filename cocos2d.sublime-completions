@@ -3,12 +3,16 @@
 
 	"completions": [
 
+		{
+			"trigger": "scheduleUpdate\t cc scheduleUpdate",
+			"contents": "scheduleUpdate()"
+		},
+
 		// Layer
 		{
 			"trigger": "scheduleOnce\t cc Layer",
 			"contents": "scheduleOnce(${1:callback}, ${2:delay})"
 		},
-
 
 		{
 			"trigger": "addChild\tcc Layer",
@@ -36,6 +40,11 @@
 			"trigger": "Sprite\tcreate Sprite",
 			"contents": "new cc.Sprite(${1:resName})"
 		}, {
+			"trigger": "PhysicsSprite\t create PhysicsSprite",
+			"contents": "cc.PhysicsSprite()"
+		}
+
+		, {
 			"trigger": "setAnchorPoint\tcc Sprite",
 			"contents": "setAnchorPoint(cc.p(${1:0.5},${2:0.5}))"
 		}, {

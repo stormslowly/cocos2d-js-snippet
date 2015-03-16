@@ -1,0 +1,27 @@
+{
+	"scope": "source.js",
+
+	"completions": [{
+		"trigger": "cp.Space\t chipmunk Space",
+		"contents": "new cp.Space()"
+	}, {
+		"trigger": "gravity\t space gravity",
+		"contents": "gravity"
+	}, {
+		"trigger": "cp.v\t chipmunk vector",
+		"contents": "new cp.v(${1:x}, ${2:y})"
+	}, {
+		"trigger": "addStaticShape\t space addStaticShape",
+		"contents": "addStaticShape(${1:space})"
+	}, {
+		"trigger": "staticBody\t space staticBody",
+		"contents": "staticBody"
+	}, {
+		"trigger": "step\t space step",
+		"contents": "step"
+	}, {
+		"trigger": "cp.SegmentShape\t chipmunk SegmentShape",
+		"contents": "new cp.SegmentShape(${1:body},${2:v1},${3:v2},${4:radius})"
+	}]
+
+}
